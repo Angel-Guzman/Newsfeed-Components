@@ -104,9 +104,6 @@ You will want your component to look like the template below:
 
   Your function should take either an object as it's one argument, 
   or 5 separate arguments mapping to each piece of the data object above.
-
-  Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
-
 */
 
 // grab parent element div.articles
@@ -159,3 +156,9 @@ Elements.forEach(data => {
   articleContainer.appendChild(data)
 })
 
+// Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
+
+data.forEach((arrayItem) => {
+  const newArticle = makeArticles(arrayItem);
+  articleContainer.appendChild(newArticle);
+})
