@@ -33,3 +33,15 @@ let menuItems = [
   Step 6: add the menu component to the DOM.
   
 */
+
+// function menuCreator(menuData) {
+
+//   const listElements = menuData.map(liText => {
+
+//     const newListEl = document.createElement('li');
+
+//     newListEl.textContent = liText;
+//   })
+
+//   return null
+// }
